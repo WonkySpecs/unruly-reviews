@@ -5,5 +5,17 @@
  */
 
 module.exports = {
-  /* Your site config here */
+    siteMetadata: {
+        title: "Something to do with board games"
+    },
+    plugins: [
+        'gatsby-transformer-json',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: './src/game-data',
+            }
+        },
+        'gatsby-transformer-remark',
+    ],
 }
