@@ -29,7 +29,7 @@ export default ({children}) => {
     return (
         <MainContainer>
             <h1>{data.site.siteMetadata.title}</h1>
-            <nav>
+            <nav style={{ "align-self": "center" }}>
                 <ul>
                     <HeaderLink to="/">Home</HeaderLink>
                     <HeaderLink to="/about">About</HeaderLink>
