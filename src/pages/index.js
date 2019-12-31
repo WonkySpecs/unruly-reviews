@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 export default ({data}) => {
     let summaryNodes = data.allFile.edges.map(edge => edge.node);

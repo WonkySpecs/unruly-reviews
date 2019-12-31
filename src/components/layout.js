@@ -35,7 +35,7 @@ export default ({children}) => {
                 <HeaderLink to="/reviews-home">The Reviews</HeaderLink>
                 <HeaderLink to="/others">Others</HeaderLink>
             </ul>
-            <div style= {{ "align-self": "start" }}>
+            <div style= {{ "align-self": "start", "padding": "1rem" }}>
                 {children}
             </div>
         </MainContainer>
