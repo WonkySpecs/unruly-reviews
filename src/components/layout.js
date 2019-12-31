@@ -29,13 +29,15 @@ export default ({children}) => {
     return (
         <MainContainer>
             <h1>{data.site.siteMetadata.title}</h1>
-            <ul>
-                <HeaderLink to="/">Home</HeaderLink>
-                <HeaderLink to="/about">About</HeaderLink>
-                <HeaderLink to="/reviews-home">The Reviews</HeaderLink>
-                <HeaderLink to="/others">Others</HeaderLink>
-            </ul>
-            <div style= {{ "align-self": "start", "padding": "1rem" }}>
+            <nav>
+                <ul>
+                    <HeaderLink to="/">Home</HeaderLink>
+                    <HeaderLink to="/about">About</HeaderLink>
+                    <HeaderLink to="/reviews-home">The Reviews</HeaderLink>
+                    <HeaderLink to="/others">Others</HeaderLink>
+                </ul>
+            </nav>
+            <div style= {{ "align-self": "start", "padding": "0 1rem" }}>
                 {children}
             </div>
         </MainContainer>
