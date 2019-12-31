@@ -13,7 +13,7 @@ module.exports = {
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                path: './src/game-data',
+                path: './src/data',
             }
         },
         'gatsby-transformer-remark',
