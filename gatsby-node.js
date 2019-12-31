@@ -21,6 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             good
             bad
+            tagline
             note
             title
           }

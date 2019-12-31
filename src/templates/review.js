@@ -35,6 +35,9 @@ export default props => {
     return (
         <Layout>
             <h2>{summary.title}</h2>
+            {summary.tagline != null && summary.tagline.length > 0 ?
+                (<p>{summary.tagline}</p>)
+                : null }
             <SummaryPoints good={summary.good} bad={summary.bad} />
             { summary.note != null && summary.note.length > 0 ? (
                 <div>
