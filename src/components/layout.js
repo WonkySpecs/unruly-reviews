@@ -17,15 +17,14 @@ const HeaderLink = props => (
 
 export default ({children}) => {
     const data = useStaticQuery(
-    graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                        title
+                    }
                 }
-            }
-        }
-    `)
+            }`)
     return (
         <MainContainer>
             <h1>{data.site.siteMetadata.title}</h1>

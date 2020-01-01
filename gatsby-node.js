@@ -29,11 +29,13 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }`);
     summaries.data.allSummariesJson.edges.forEach(edge => {
+        const pathParts = edge.node.fields.slug.split("/");
         createPage({
             path: edge.node.fields.slug,
             component: path.resolve('./src/templates/review.js'),
             context: {
-                summary: edge.node
+                summary: edge.node,
+                reviewName: pathParts[pathParts.length - 1]
             }
         });
     })
