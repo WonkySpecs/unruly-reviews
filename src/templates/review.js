@@ -73,13 +73,11 @@ export default props => {
 }
 
 function getReviewContent(reviewName, allRemarks) {
-    console.log("Looking for " + reviewName);
     for (let i = 0; i < allRemarks.length; i++) {
         const remark = allRemarks[i].node;
         if (remark.fileAbsolutePath.endsWith(reviewName + ".md")) {
             return remark.html;
         }
     }
-    console.log("Couldn't find");
     return null;
 }
