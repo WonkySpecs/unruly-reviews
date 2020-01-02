@@ -6,7 +6,9 @@
 
 module.exports = {
     siteMetadata: {
-        title: "Something to do with board games"
+        title: "Something to do with board games",
+        description: "To-the-point reviews of really great board games",
+        author: "Will Taylor",
     },
     plugins: [
         'gatsby-transformer-json',
@@ -23,5 +25,6 @@ module.exports = {
                 path: './src/data',
             }
         },
+        'gatsby-plugin-react-helmet',
     ],
 }

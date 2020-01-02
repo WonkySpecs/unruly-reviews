@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
 export default ({data}) => (
-    <Layout>
+    <Layout title="About">
         <div dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html }} />
     </Layout>
 )

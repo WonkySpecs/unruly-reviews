@@ -47,7 +47,7 @@ export default props => {
     const reviewContent = getReviewContent(
         props.pageContext.reviewName, query.allMarkdownRemark.edges);
     return (
-        <Layout>
+        <Layout title={summary.title}>
             <h2>{summary.title}</h2>
             {summary.tagline != null && summary.tagline.length > 0 ?
                 (<p>{summary.tagline}</p>)

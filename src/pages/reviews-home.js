@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 
 export default ({data}) => (
-    <Layout>
+    <Layout title="Reviews">
         <h2>The reviews</h2>
         {data.allSummariesJson.edges.map(({node}) => (
             <div>
