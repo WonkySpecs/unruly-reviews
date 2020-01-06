@@ -1,3 +1,6 @@
+---
+gameId: hive
+---
 Hive is an abstract puzzle game, and if you hate the very idea of Chess, Go, or anything of the sort, it won't be for you. However, if you're looking for a deeply engaging competitive puzzle, it's nothing short of fantastic.
 
 Comparisons between Hive and Chess/Go are inevitable, as it takes elements from both. As in Go, the game begins with a blank slate, and pieces are continuously added to the 'board'. And as in Chess, each piece can be moved in a particular, constrained way, with the objective being to capture a specific, and particularly slow, piece of your opponent's. However, in both of these venerable ancestors, the _lack_ of these things - movement of stones in Go, and the inability to add new material to the board in Chess - are core elements, so by combining the two Hive introduces a completely different puzzle. The bughouse variants of chess are, perhaps appropriately, probably the closest equivalents.

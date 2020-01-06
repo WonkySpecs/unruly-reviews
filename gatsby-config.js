@@ -27,4 +27,7 @@ module.exports = {
         },
         'gatsby-plugin-react-helmet',
     ],
+    mapping: {
+        "SummariesJson.review": "MarkdownRemark.frontmatter.gameId",
+    },
 }

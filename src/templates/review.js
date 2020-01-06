@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useStaticQuery, graphql } from "gatsby"
 import styles from "../styles/review.module.css"
 
 const PointList = ({points}) => (
@@ -30,22 +29,8 @@ const SummaryPoints = ({good, bad}) => {
 
 export default props => {
     const summary = props.pageContext.summary;
+    const reviewContent = summary.review != null ? summary.review.html : null;
 
-    const query = useStaticQuery(
-        graphql`
-            query {
-                allMarkdownRemark {
-                    edges {
-                        node {
-                            html
-                            fileAbsolutePath
-                        }
-                    }
-                }
-            }`);
-    // I'm sure this should be done within a query, but I can't figure out how
-    const reviewContent = getReviewContent(
-        props.pageContext.reviewName, query.allMarkdownRemark.edges);
     return (
         <Layout title={summary.title}>
             <h2>{summary.title}</h2>
@@ -70,14 +55,4 @@ export default props => {
                 )}
         </Layout>
     )
-}
-
-function getReviewContent(reviewName, allRemarks) {
-    for (let i = 0; i < allRemarks.length; i++) {
-        const remark = allRemarks[i].node;
-        if (remark.fileAbsolutePath.endsWith(reviewName + ".md")) {
-            return remark.html;
-        }
-    }
-    return null;
 }
