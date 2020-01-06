@@ -1,0 +1,44 @@
+[
+    {
+        "id": "genre-deck-builder",
+        "displayName": "Deck Builder",
+        "tagType": "genre",
+        "tooltip": "Collect a deck of increasingly powerful cards by playing cards from the deck as you build it." },
+    {
+        "id": "genre-abstract",
+        "displayName": "Abstract",
+        "tagType": "genre",
+        "tooltip": "A puzzle style game, often with only light theme." },
+    {
+        "id": "genre-hidden-movement",
+        "displayName": "Hidden Movement",
+        "tagType": "genre",
+        "tooltip": "One or more players mark down their moves in secret, whilst others try to hunt them down." },
+    {
+        "id": "genre-tableau",
+        "displayName": "Tableau Building",
+        "tagType": "genre",
+        "tooltip": "Build a collection of components which outrivals your opponents's." },
+
+
+    {
+        "id": "theme-nature",
+        "displayName": "Nature",
+        "tagType": "theme",
+        "tooltip": "Inspired by the natural world" },
+    {
+        "id": "theme-fantasy",
+        "displayName": "Fantasy",
+        "tagType": "theme",
+        "tooltip": "Includes fantastical elements such as magic or mythical creatures" },
+    {
+        "id": "theme-historical",
+        "displayName": "Historical",
+        "tagType": "theme",
+        "tooltip": "Recreates or reimagines actual historical events" },
+    {
+        "id": "theme-sci-fi",
+        "displayName": "Science Fiction",
+        "tagType": "theme",
+        "tooltip": "Includes fictional or futuristic technology" }
+]
