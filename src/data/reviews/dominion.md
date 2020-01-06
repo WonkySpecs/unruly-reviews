@@ -1,3 +1,6 @@
+---
+gameId: dominion
+---
 Like so many others, Dominion was my gateway game. Between a small group of friends, we amassed more than half of the expansions and played hundreds of games over a couple of card and board game filled years. Since then, my time for gaming has shrunk, and my collection of games has grown, yet Dominion remains a favourite; it may be getting on in years now, but there's a reason it's popular enough to have racked up a dozen expansions over the last decade and a bit.
 
 Much of Dominion's enjoyment and replayability comes from the arc of it's gameplay. As the game progresses, the challenge it presents evolves and grows constantly, but does so in a way based on the decisions you have made up to that point. This means that from the calm of the first turn, through the game's climactic race for victory points, and on to the conclusive final scoring, there is a persistent thread which ties the entire experience together, whilst empowering the player to be in control from beginning to end. The nature of the challenge - keeping your deck balanced - remains the same throughout, and so does the type of skill required to manage it, yet the fluidity of what you need to accomplish at each stage of the game makes it endlessly engaging.
