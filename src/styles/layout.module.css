@@ -9,3 +9,10 @@
     border: 3px solid #C0C0C0;
     font-family: sans-serif;
 }
+
+.headerUnderline {
+    margin: 1.5rem 0 0.5rem 0;
+    width: 95%;
+    height: 2px;
+    background-color: black;
+}
