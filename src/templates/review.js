@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import styles from "../styles/review.module.css"
+import GameTag from "../components/gameTag"
 
 const PointList = ({points}) => (
     <ul className={styles.pointlist}>
@@ -33,7 +34,12 @@ export default props => {
 
     return (
         <Layout title={summary.title}>
-            <h2>{summary.title}</h2>
+            <span style={{"display":"flex", "align-items": "center"}}>
+                <h2>{summary.title}</h2>
+                {summary.tags.map(tag => (
+                    <GameTag displayName={tag.displayName} tagType={tag.type} />
+                    ))}
+            </span>
             {summary.tagline != null && summary.tagline.length > 0 ?
                 (<p>{summary.tagline}</p>)
                 : null }

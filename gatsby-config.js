@@ -29,5 +29,6 @@ module.exports = {
     ],
     mapping: {
         "SummariesJson.review": "MarkdownRemark.frontmatter.gameId",
+        "SummariesJson.tags": "TagsJson.id",
     },
 }

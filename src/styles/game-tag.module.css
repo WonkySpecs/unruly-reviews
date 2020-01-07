@@ -1,0 +1,16 @@
+.gameTag {
+    border-radius: 1em;
+    padding: 0.1em 0.3em;
+    font-size: small;
+    background-color: lightgrey;
+}
+
+.genreTag {
+    composes: gameTag;
+    background-color: #99e5b9;
+}
+
+.themeTag {
+    composes: gameTag;
+    background-color: #c7c0d1;
+}
