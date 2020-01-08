@@ -31,13 +31,12 @@ const SummaryPoints = ({good, bad}) => {
 export default props => {
     const summary = props.pageContext.summary;
     const reviewContent = summary.review != null ? summary.review.html : null;
-
     return (
         <Layout title={summary.title}>
             <span style={{"display":"flex", "align-items": "center"}}>
                 <h2>{summary.title}</h2>
                 {summary.tags.map(tag => (
-                    <GameTag displayName={tag.displayName} tagType={tag.type} />
+                    <GameTag tagData={tag} />
                     ))}
             </span>
             {summary.tagline != null && summary.tagline.length > 0 ?

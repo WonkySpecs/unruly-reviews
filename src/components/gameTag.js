@@ -14,6 +14,14 @@ function classForTagType(tagType) {
     }
 }
 
-export default ({displayName, tagType}) => (
-    <div className={classForTagType(tagType)}>{displayName}</div>
-)
+export default ({tagData}) => {
+    const { displayName, type, tooltip } = tagData;
+    return (
+        <div className={classForTagType(type)}>
+            {displayName}
+            <div className={styles.tooltip}>
+                {type}: {tooltip}
+            </div>
+        </div>
+    )
+}

@@ -30,6 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
             tags {
                 displayName
                 type
+                tooltip
             }
           }
         }
