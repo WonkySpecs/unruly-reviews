@@ -27,6 +27,11 @@ exports.createPages = async ({ graphql, actions }) => {
             review {
                 html
             }
+            tags {
+                displayName
+                type
+                tooltip
+            }
           }
         }
       }

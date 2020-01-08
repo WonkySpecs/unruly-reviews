@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import styles from "../styles/review.module.css"
+import GameTag from "../components/gameTag"
 
 const PointList = ({points}) => (
     <ul className={styles.pointlist}>
@@ -30,10 +31,18 @@ const SummaryPoints = ({good, bad}) => {
 export default props => {
     const summary = props.pageContext.summary;
     const reviewContent = summary.review != null ? summary.review.html : null;
-
     return (
         <Layout title={summary.title}>
-            <h2>{summary.title}</h2>
+            <span className={styles.titleWrapper}>
+                <h2>{summary.title}</h2>
+                {summary.tags != null && summary.tags.length > 0 ? (
+                    <div className={styles.taglist}>
+                        {summary.tags.map(tag => (
+                            <GameTag tagData={tag} />
+                            ))}
+                    </div> )
+                    : null }
+            </span>
             {summary.tagline != null && summary.tagline.length > 0 ?
                 (<p>{summary.tagline}</p>)
                 : null }
