@@ -33,11 +33,15 @@ export default props => {
     const reviewContent = summary.review != null ? summary.review.html : null;
     return (
         <Layout title={summary.title}>
-            <span style={{"display":"flex", "align-items": "center"}}>
+            <span className={styles.titleWrapper}>
                 <h2>{summary.title}</h2>
-                {summary.tags.map(tag => (
-                    <GameTag tagData={tag} />
-                    ))}
+                {summary.tags != null && summary.tags.length > 0 ? (
+                    <div className={styles.taglist}>
+                        {summary.tags.map(tag => (
+                            <GameTag tagData={tag} />
+                            ))}
+                    </div> )
+                    : null }
             </span>
             {summary.tagline != null && summary.tagline.length > 0 ?
                 (<p>{summary.tagline}</p>)
