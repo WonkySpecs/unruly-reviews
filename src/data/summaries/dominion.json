@@ -9,5 +9,6 @@
     ],
     "bad": [
         "You like lots of direct player interaction."
-    ]
+    ],
+    "tags": ["genre-deck-builder", "theme-fantasy"]
 }

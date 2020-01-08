@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import containerStyles from "../styles/main-container.module.css"
+import styles from "../styles/layout.module.css"
 import SEO from "./seo"
 
 const MainContainer = ({children}) => (
-    <div className={containerStyles.mainContainer}>
+    <div className={styles.mainContainer}>
         {children}
     </div>
 )
@@ -38,6 +38,7 @@ export default ({title, children}) => {
                         <HeaderLink to="/others">Others</HeaderLink>
                     </ul>
                 </nav>
+                <div className={styles.headerUnderline}/>
                 <div style= {{ "align-self": "start", "padding": "0 1rem" }}>
                     {children}
                 </div>
