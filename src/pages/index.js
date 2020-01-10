@@ -1,51 +1,45 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import ReviewList from "../components/reviewList"
 
 export default ({data}) => {
-    let summaryNodes = data.allFile.edges.map(edge => edge.node);
-    summaryNodes.sort((s1, s2) => s1.mtime < s2.mtime);
+    let gamePages = data.allSummariesJson.edges.map(edge => edge.node);
     return (
         <Layout title="Home">
             <div dangerouslySetInnerHTML={introText(data)} />
-            {summaryNodes.map(node => {
-                const summary = node.childSummariesJson;
-                return (
-                    <div>
-                        <Link to={summary.fields.slug}>{summary.title}</Link>
-                        {summary.tagline != null && summary.tagline.length > 0 ? (
-                            <span> - {summary.tagline} </span>)
-                            : null}
-                    </div>)
-            })}
+            <ReviewList gamePages={gamePages} />
         </Layout>
     )
 }
 
 export const query = graphql`
     query {
-        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/home.md$/"}}) {
-            edges {
-                node {
-                    html
-                }
+      allSummariesJson(sort: {fields: added, order: DESC}, limit: 3) {
+        edges {
+          node {
+            fields {
+              slug
             }
+            tagline
+            title
+            added
+            tags {
+              displayName
+              type
+              tooltip
+            }
+          }
         }
-        allFile(filter: {childSummariesJson: {title: {ne: null}}}) {
-            edges {
-                node {
-                    mtime
-                    childSummariesJson {
-                        title
-                        tagline
-                        fields {
-                            slug
-                        }
-                    }
-                }
-            }
+      }
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/home.md$/"}}) {
+        edges {
+          node {
+            html
+          }
         }
     }
+  }
 `
 
 function introText(data) {
