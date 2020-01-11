@@ -1,0 +1,36 @@
+.reviewsListWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewRow {
+    display: grid;
+    grid-template-columns: [nameAndTag] 1fr [tagline] 4fr [date] 1fr;
+    grid-template-rows: auto;
+    margin: 0.3rem 0;
+}
+
+.nameAndTagsWrapper {
+    row: 1;
+    column: nameAndTag;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameName {
+    font-size: x-large;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.taglineWrapper {
+    row: 1;
+    column: tagline;
+    margin: 0 0.3rem;
+}
+
+.dateWrapper {
+    row: 1;
+    column: date;
+}
