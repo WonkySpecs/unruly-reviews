@@ -8,19 +8,13 @@ export default ({gamePages}) => {
         <div className={styles.reviewsListWrapper}>
             {gamePages.map(gamePage => (
                 <div className={styles.reviewRow}>
-                    <div className={styles.nameAndTagWrapper}>
-                        <Link to={gamePage.fields.slug} className={styles.gameNameLink} style={{"font-size": "large"}}>
+                    <div className={styles.nameAndTagsWrapper}>
+                        <Link to={gamePage.fields.slug} className={styles.gameName}>
                             {gamePage.title}
                         </Link>
-                        <div className={styles.tagWrapper}>
-                            {gamePage.tags != null && gamePage.tags.length > 0 ? (
-                                <div>
-                                    {gamePage.tags.map(tag => (
-                                        <GameTag tagData={tag} />
-                                        ))}
-                                </div> )
-                                : null }
-                        </div>
+                            {gamePage.tags.map(tag => (
+                                <GameTag tagData={tag} />
+                                ))}
                     </div>
 
                     <div className={styles.taglineWrapper}>
