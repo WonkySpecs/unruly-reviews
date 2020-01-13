@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: [nameAndTag] 1fr [tagline] 4fr [date] 1fr;
     grid-template-rows: auto;
-    margin: 0.3rem 0;
+    margin: 0.5rem 0;
 }
 
 .nameAndTagsWrapper {
@@ -22,15 +22,37 @@
     font-size: x-large;
     margin-bottom: 0.2rem;
     text-align: center;
+    color: black;
+}
+
+.gameName:visited {
+    color: black;
+}
+
+.gameName:hover {
+    background-color: #111;
+    color: white;
+}
+
+.tagsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameAndTagsWrapper div  {
+    margin-top: 0.15rem;
 }
 
 .taglineWrapper {
     row: 1;
     column: tagline;
     margin: 0 0.3rem;
+    font-size: large;
 }
 
 .dateWrapper {
     row: 1;
     column: date;
+    color: grey;
 }
