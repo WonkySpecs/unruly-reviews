@@ -1,37 +1,41 @@
 .reviewsListWrapper {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap
 }
 
-.reviewRow {
-    display: grid;
-    grid-template-columns: [nameAndTag] 1fr [tagline] 4fr [date] 1fr;
-    grid-template-rows: auto;
-    margin: 0.5rem 0;
+.gameTileWrapper {
+    margin: 0.5rem;
+    width: 30%;
 }
 
-.nameAndTagsWrapper {
-    row: 1;
-    column: nameAndTag;
+.gameTile {
     display: flex;
+    border: 2px #555 solid;
+    border-radius: 5px;
     flex-direction: column;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    box-sizing: border-box;
+    padding: 0.4rem;
+    /* remove unwanted styles from a element style */
+    text-decoration: unset;
+    color: unset;
+}
+
+.gameTile:hover {
+    background-color: #ddd;
+}
+
+.gameTile:active {
+    background-color: #ccc;
 }
 
 .gameName {
     font-size: x-large;
     margin-bottom: 0.2rem;
     text-align: center;
-    color: black;
-}
-
-.gameName:visited {
-    color: black;
-}
-
-.gameName:hover {
-    background-color: #111;
-    color: white;
+    margin-top: 0;
 }
 
 .tagsWrapper {
@@ -40,19 +44,17 @@
     align-items: center;
 }
 
-.nameAndTagsWrapper div  {
-    margin-top: 0.15rem;
+.tagsWrapper div:not(:last-child) {
+    margin-bottom: 0.2rem;
 }
 
 .taglineWrapper {
-    row: 1;
-    column: tagline;
-    margin: 0 0.3rem;
+    margin: 0.3rem 0;
     font-size: large;
+    overflow-wrap: break-word;
 }
 
 .dateWrapper {
-    row: 1;
-    column: date;
     color: grey;
+    margin-top: auto;
 }
