@@ -1,6 +1,6 @@
 .gameTag {
     border-radius: 1em;
-    padding: 0.1em 0.3em;
+    padding: 0.05em 0.3em;
     font-size: small;
     background-color: lightgrey;
     width: fit-content;
@@ -23,7 +23,6 @@
     border: 1px solid #111;
     opacity: 0;
     transition: 0.07s;
-    transform: translateX(-50%);
     padding: 0.1rem;
     margin: 0.2rem;
 }

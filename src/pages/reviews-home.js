@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import ReviewList from "../components/reviewList"
 
 export default ({data}) => (
