@@ -54,7 +54,18 @@
     overflow-wrap: break-word;
 }
 
-.dateWrapper {
-    color: grey;
+.footer {
     margin-top: auto;
+    font-size: small;
+    color: #555;
+    display: flex;
+}
+
+.reviewStatus {
+    margin-left: auto;
+    order: 1;
+}
+
+.dateWrapper {
+    order: 0;
 }
