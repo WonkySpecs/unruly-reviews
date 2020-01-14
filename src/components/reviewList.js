@@ -22,8 +22,14 @@ export default ({gamePages}) => {
                             {gamePage.tagline}
                         </div>
 
-                        <div className={styles.dateWrapper}>
-                            {new Date(gamePage.added).toDateString()}
+                        <div className={styles.footer}>
+                            <div className={styles.reviewStatus}>
+                                {gamePage.review == null ?
+                                    "Summary Only" : "Full Review" }
+                            </div>
+                            <div className={styles.dateWrapper}>
+                                {new Date(gamePage.added).toDateString()}
+                            </div>
                         </div>
                     </Link>
                 </div>
