@@ -19,7 +19,11 @@
         "displayName": "Tableau Building",
         "type": "genre",
         "tooltip": "Build a collection of components which outrivals your opponents's." },
-
+    {
+        "id": "genre-bluffing",
+        "displayName": "Bluffing",
+        "type": "genre",
+        "tooltip": "Work out the truth from the lies, whilst dishing out plenty of both." },
 
     {
         "id": "theme-nature",
