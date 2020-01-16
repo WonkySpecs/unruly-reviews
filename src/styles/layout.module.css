@@ -16,3 +16,17 @@
     height: 2px;
     background-color: black;
 }
+
+nav {
+    align-self: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.bodyContent {
+    align-self: start;
+    padding: 0 1rem;
+}
