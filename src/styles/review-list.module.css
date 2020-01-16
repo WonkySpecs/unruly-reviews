@@ -32,26 +32,27 @@
 }
 
 .gameName {
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 0.2rem;
     text-align: center;
     margin-top: 0;
 }
 
 .tagsWrapper {
+    margin: 0.1rem 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-self: center;
 }
 
 .tagsWrapper div:not(:last-child) {
-    margin-bottom: 0.2rem;
+    margin-right: 0.2rem;
 }
 
 .taglineWrapper {
-    margin: 0.3rem 0;
-    font-size: large;
+    margin: 0.3rem;
     overflow-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .footer {
