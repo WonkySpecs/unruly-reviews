@@ -10,7 +10,7 @@ const MainContainer = ({children}) => (
 )
 
 const HeaderLink = props => (
-    <li style={{ display: "inline-block", marginRight: "1rem" }}>
+    <li>
         <Link to={props.to}>{props.children}</Link>
     </li>
 )
@@ -30,7 +30,7 @@ export default ({title, children}) => {
             <SEO title={title || ""}/>
             <MainContainer>
                 <h1>{data.site.siteMetadata.title}</h1>
-                <nav style={{ "align-self": "center" }}>
+                <nav>
                     <ul>
                         <HeaderLink to="/">Home</HeaderLink>
                         <HeaderLink to="/about">About</HeaderLink>
@@ -39,7 +39,7 @@ export default ({title, children}) => {
                     </ul>
                 </nav>
                 <div className={styles.headerUnderline}/>
-                <div style= {{ "align-self": "start", "padding": "0 1rem" }}>
+                <div className={styles.bodyContent}>
                     {children}
                 </div>
             </MainContainer>

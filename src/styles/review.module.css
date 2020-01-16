@@ -3,32 +3,37 @@
     align-items: center;
 }
 
-.taglist {
+.tagList {
     display: flex;
 }
 
-.taglist * {
+.tagList * {
     margin: 0 0.15rem;
 }
 
-.taglist::before {
+.tagList::before {
     content: "-";
     margin: 0 0.5rem;
     color: #999;
     font-size: medium;
 }
 
-.pointlist {
+.pointList {
     padding-left: 1rem;
     list-style-position: outside;
 }
 
-.summarybox {
+.summaryBox {
     width: 50%;
     padding: 0 1rem 0 1rem;
     margin: 0 0.5rem ;
 }
 
-.pointlisttitle {
+.pointListTitle {
     margin-bottom: -0.8rem;
+}
+
+.summaryPointsContainer {
+    display: flex;
+    align-items: flex-start;
 }

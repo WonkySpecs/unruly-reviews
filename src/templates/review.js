@@ -4,7 +4,7 @@ import styles from "../styles/review.module.css"
 import GameTag from "../components/gameTag"
 
 const PointList = ({points}) => (
-    <ul className={styles.pointlist}>
+    <ul className={styles.pointList}>
         {points.map(text => {
             return (<li>{text}</li>)
         })}
@@ -12,15 +12,15 @@ const PointList = ({points}) => (
 )
 
 const SummaryBox = ({points, color, headerText}) => (
-    <div className={styles.summarybox} style={{"background-color": color}}>
-        <h3 className={styles.pointlisttitle}>{headerText}:</h3>
+    <div className={styles.summaryBox} style={{"background-color": color}}>
+        <h3 className={styles.pointListTitle}>{headerText}:</h3>
         <PointList points={points} />
     </div>
 )
 
 const SummaryPoints = ({good, bad}) => {
     return (
-        <div style={{"display": "flex", "align-items": "flex-start"}}>
+        <div className={styles.summaryPointsContainer}>
             <SummaryBox points={good} color="#99ea83" headerText="Get it for" />
             <SummaryBox points={bad} color="#ea839b" headerText="Avoid if" />
         </div>
@@ -36,7 +36,7 @@ export default props => {
             <span className={styles.titleWrapper}>
                 <h2>{summary.title}</h2>
                 {summary.tags != null && summary.tags.length > 0 ? (
-                    <div className={styles.taglist}>
+                    <div className={styles.tagList}>
                         {summary.tags.map(tag => (
                             <GameTag tagData={tag} />
                             ))}
@@ -49,7 +49,7 @@ export default props => {
             <SummaryPoints good={summary.good} bad={summary.bad} />
             {summary.note != null && summary.note.length > 0 ? (
                 <div>
-                    <h3 className={styles.pointlisttitle}>Also notable:</h3>
+                    <h3 className={styles.pointListTitle}>Also notable:</h3>
                     <PointList points={summary.note} />
                 </div>)
                 : null
