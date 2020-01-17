@@ -1,5 +1,3 @@
 ## Welcome
 
-Welcome to FIGURE OUT A GODDAMN NAME where you can find **to-the-point, insightful summaries and reviews of really great board games** which get right to the heart of what makes them tick. Hopefully it can help you find the perfect game for you and the people you play with, as well as rule out any which aren't going to be just right for your next game night.
-
-Visit the about page for more on what you can expect to find here, or dive straight into our most recent reviews:
+Welcome to FIGURE OUT A GODDAMN NAME, where you can find **to-the-point, insightful summaries and reviews of really great board games**. Not included are long rules explanations, or any in-depth exploration of mechanics; both can be useful, but are the focus of far too many online reviews. Instead, the reviews here get right to the heart of what makes these games fun to play, to help you find the perfect game for you and the people you play with.

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import ReviewList from "../components/reviewList"
 
 export default ({data}) => {
@@ -8,6 +8,7 @@ export default ({data}) => {
     return (
         <Layout title="Home">
             <div dangerouslySetInnerHTML={introText(data)} />
+            <p>Visit the <Link to="/about">about page</Link> for more information on this site, checkout all <Link to="/reviews">the reviews</Link>, or dive right in to one of the most recent:</p>
             <ReviewList gamePages={gamePages} />
         </Layout>
     )
