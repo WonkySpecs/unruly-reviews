@@ -41,8 +41,8 @@ export const query = graphql`
             html
           }
         }
+      }
     }
-  }
 `
 
 function introText(data) {

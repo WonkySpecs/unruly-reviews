@@ -11,16 +11,9 @@
     margin: 0 0.15rem;
 }
 
-.tagList::before {
-    content: "-";
-    margin: 0 0.5rem;
-    color: #999;
-    font-size: medium;
-}
-
-.pointList {
-    padding-left: 1rem;
-    list-style-position: outside;
+.summaryPointsContainer {
+    display: flex;
+    align-items: flex-start;
 }
 
 .summaryBox {
@@ -33,7 +26,37 @@
     margin-bottom: -0.8rem;
 }
 
-.summaryPointsContainer {
-    display: flex;
-    align-items: flex-start;
+.pointList {
+    padding-left: 1rem;
+    list-style-position: outside;
+}
+
+@media(max-width: 500px) {
+    .titleWrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tagList {
+        margin: -0.5rem 0;
+    }
+
+    .summaryBox {
+        width: 85%;
+        margin: 0.2rem 0;
+    }
+
+    .summaryPointsContainer {
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 500px) {
+    .tagList::before {
+        content: "-";
+        margin: 0 0.5rem;
+        color: #999;
+        font-size: medium;
+    }
+
 }
