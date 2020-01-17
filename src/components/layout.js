@@ -3,12 +3,6 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import styles from "../styles/layout.module.css"
 import SEO from "./seo"
 
-const MainContainer = ({children}) => (
-    <div className={styles.mainContainer}>
-        {children}
-    </div>
-)
-
 const HeaderLink = props => (
     <li>
         <Link to={props.to}>{props.children}</Link>
@@ -28,8 +22,8 @@ export default ({title, children}) => {
     return (
         <>
             <SEO title={title || ""}/>
-            <MainContainer>
-                <h1>{data.site.siteMetadata.title}</h1>
+            <div className={styles.mainContainer}>
+                <h1 className={styles.headerTitle}>{data.site.siteMetadata.title}</h1>
                 <nav>
                     <ul>
                         <HeaderLink to="/">Home</HeaderLink>
@@ -42,7 +36,7 @@ export default ({title, children}) => {
                 <div className={styles.bodyContent}>
                     {children}
                 </div>
-            </MainContainer>
+            </div>
         </>
     )
 }

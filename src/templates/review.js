@@ -33,7 +33,7 @@ export default props => {
     const reviewContent = summary.review != null ? summary.review.html : null;
     return (
         <Layout title={summary.title}>
-            <span className={styles.titleWrapper}>
+            <div className={styles.titleWrapper}>
                 <h2>{summary.title}</h2>
                 {summary.tags != null && summary.tags.length > 0 ? (
                     <div className={styles.tagList}>
@@ -42,7 +42,7 @@ export default props => {
                             ))}
                     </div> )
                     : null }
-            </span>
+            </div>
             {summary.tagline != null && summary.tagline.length > 0 ?
                 (<p>{summary.tagline}</p>)
                 : null }

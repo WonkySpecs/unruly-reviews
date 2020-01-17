@@ -8,6 +8,12 @@
     width: 30%;
 }
 
+@media(max-width: 400px) {
+    .gameTileWrapper {
+        width: 95%;
+    }
+}
+
 .gameTile {
     display: flex;
     border: 2px #555 solid;
