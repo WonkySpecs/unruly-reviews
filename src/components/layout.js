@@ -28,7 +28,7 @@ export default ({title, children}) => {
                     <ul>
                         <HeaderLink to="/">Home</HeaderLink>
                         <HeaderLink to="/about">About</HeaderLink>
-                        <HeaderLink to="/reviews-home">The Reviews</HeaderLink>
+                        <HeaderLink to="/reviews">The Reviews</HeaderLink>
                         <HeaderLink to="/others">Others</HeaderLink>
                     </ul>
                 </nav>
