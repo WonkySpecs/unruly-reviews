@@ -6,7 +6,7 @@
 
 module.exports = {
     siteMetadata: {
-        title: "Something to do with board games",
+        title: "Unruly Reviews",
         description: "To-the-point reviews of really great board games",
         author: "Will Taylor",
     },
