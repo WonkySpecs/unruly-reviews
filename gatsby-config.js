@@ -9,8 +9,11 @@ module.exports = {
         title: "Unruly Reviews",
         description: "To-the-point reviews of really great board games",
         author: "Will Taylor",
+        siteUrl: 'https://www.unrulyreviews.co.uk',
     },
     plugins: [
+        'gatsby-plugin-sitemap',
+        'gatsby-plugin-robots-txt',
         'gatsby-transformer-json',
         {
             resolve: 'gatsby-source-filesystem',
@@ -26,6 +29,12 @@ module.exports = {
             }
         },
         'gatsby-plugin-react-helmet',
+        {
+            resolve: 'gatsby-plugin-react-helmet-canonical-urls',
+            options: {
+              siteUrl: 'https://www.unrulyreviews.co.uk',
+            },
+        }
     ],
     mapping: {
         "SummariesJson.review": "MarkdownRemark.frontmatter.gameId",
