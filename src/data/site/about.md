@@ -11,4 +11,4 @@ Of course, that makes everything here based _entirely_ on my opinion. To that en
 
 ## The technical bit
 
-The site is built with [Gatsby](https://www.gatsbyjs.org/) and deployed with [Netlify](https://www.netlify.com/). [The source code](https://github.com/WonkySpecs/board-game-site) for the site is hosted on Github. Please raise an issue on Github for any problems you find with the site, or get in touch (once I've set up an email it will appear here).
+The site is built with [Gatsby](https://www.gatsbyjs.org/) and deployed with [Netlify](https://www.netlify.com/). [The source code](https://github.com/WonkySpecs/unruly-reviews) for the site is hosted on Github. Please raise an issue on Github for any problems you find with the site, or get in touch (once I've set up an email it will appear here).
