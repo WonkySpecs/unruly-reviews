@@ -8,7 +8,7 @@
     width: 30%;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 550px) {
     .gameTileWrapper {
         width: 95%;
     }
@@ -45,17 +45,18 @@
 }
 
 .tagsWrapper {
-    margin: 0.1rem 0;
     display: flex;
     align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.tagsWrapper div:not(:last-child) {
-    margin-right: 0.2rem;
+.tagsWrapper div {
+    margin: 0.1rem;
 }
 
 .taglineWrapper {
-    margin: 0.3rem;
+    margin: 0.1rem 0.3rem 0.5rem 0.3rem;
     overflow-wrap: break-word;
     text-align: justify;
     text-justify: inter-word;
