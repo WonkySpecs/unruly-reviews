@@ -24,17 +24,23 @@
         "displayName": "Bluffing",
         "type": "genre",
         "tooltip": "Work out the truth from the lies, whilst dishing out plenty of both." },
+    {
+        "id": "genre-economic",
+        "displayName": "Economic",
+        "type": "genre",
+        "tooltip": "Includes a system of resources to manipulate and take advantage of."
+    },
 
     {
         "id": "theme-nature",
         "displayName": "Nature",
         "type": "theme",
-        "tooltip": "Inspired by the natural world" },
+        "tooltip": "Inspired by the natural world." },
     {
         "id": "theme-fantasy",
         "displayName": "Fantasy",
         "type": "theme",
-        "tooltip": "Includes fantastical elements such as magic or mythical creatures" },
+        "tooltip": "Includes fantastical elements such as magic, or mythical creatures." },
     {
         "id": "theme-historical",
         "displayName": "Historical",
