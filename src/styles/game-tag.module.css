@@ -1,9 +1,10 @@
 .gameTag {
     border-radius: 1em;
-    padding: 0.05em 0.3em;
+    padding: 0.08em 0.35em;
     font-size: small;
     background-color: lightgrey;
-    width: fit-content;
+    text-align: center;
+    height: min-content;
 }
 
 .genreTag {

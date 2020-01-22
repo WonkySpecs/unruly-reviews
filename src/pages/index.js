@@ -8,7 +8,7 @@ export default ({data}) => {
     return (
         <Layout title="Home">
             <div dangerouslySetInnerHTML={introText(data)} />
-            <p>Visit the <Link to="/about">about page</Link> for more information on this site, checkout all <Link to="/reviews">the reviews</Link>, or dive right in to one of the most recent:</p>
+            <p>Visit the <Link to="/about">about page</Link> for more information on this site, check out all <Link to="/reviews">the reviews</Link>, or dive right in to one of the most recent:</p>
             <ReviewList gamePages={gamePages} />
         </Layout>
     )
