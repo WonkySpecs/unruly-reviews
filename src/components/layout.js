@@ -24,7 +24,7 @@ export default ({title, children}) => {
             <SEO title={title || ""}/>
             <div className={styles.mainContainer}>
                 <h1 className={styles.headerTitle}>{data.site.siteMetadata.title}</h1>
-                <nav>
+                <nav className={styles.headerLinks}>
                     <ul>
                         <HeaderLink to="/">Home</HeaderLink>
                         <HeaderLink to="/about">About</HeaderLink>

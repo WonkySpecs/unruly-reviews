@@ -58,7 +58,7 @@ export default props => {
                 : (
                 <div>
                     <h2>Full Review</h2>
-                    <div dangerouslySetInnerHTML={{__html: reviewContent }} />
+                    <article dangerouslySetInnerHTML={{__html: reviewContent }} />
                 </div>
 
                 )}

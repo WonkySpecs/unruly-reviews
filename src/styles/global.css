@@ -2,24 +2,6 @@ html {
     background-color: #E6E6FA;
 }
 
-nav {
-    margin: -1.8rem auto -0.8rem auto;
-}
-
-nav a {
-    font-size: large;
-    color: black;
-}
-
-nav a:visited {
-    color: black;
-}
-
-nav a:hover {
-    background-color: #111;
-    color: white;
-}
-
 p {
     line-height: 1.3rem;
 }

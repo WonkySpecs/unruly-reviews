@@ -23,24 +23,39 @@
     background-color: black;
 }
 
-nav {
+.headerLinks {
     align-self: center;
-    margin-bottom: -1.5rem;
+    margin: -1.8rem auto -0.8rem auto;
 }
 
-nav ul {
+.headerLinks ul {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0 0.2rem;
 }
 
-nav ul li {
+.headerLinks ul li {
     display: inline-block;
     text-align: center;
 }
 
-nav ul li:not(:last-child) {
+.headerLinks ul li:not(:last-child) {
     margin-right: 1rem;
+}
+
+.headerLinks a {
+    font-size: large;
+    color: black;
+}
+
+.headerLinks a:visited {
+    color: black;
+}
+
+.headerLinks a:hover {
+    background-color: #111;
+    color: white;
 }
 
 .headerTitle {
