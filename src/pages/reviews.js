@@ -12,7 +12,7 @@ export default ({data}) => (
 
 export const query = graphql`
   query {
-    allSummariesJson {
+    allSummariesJson(sort: {fields: added, order: DESC}) {
       edges {
         node {
           fields {
