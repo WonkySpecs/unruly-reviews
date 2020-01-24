@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 export default ({gamePages}) => {
     return (
-        <div className={styles.reviewsListWrapper}>
+        <nav className={styles.reviewsListWrapper}>
             {gamePages.map(gamePage => (
                 <div className={styles.gameTileWrapper}>
                     <Link to={gamePage.fields.slug} className={styles.gameTile}>
@@ -34,6 +34,6 @@ export default ({gamePages}) => {
                     </Link>
                 </div>
                 ))}
-        </div>
+        </nav>
     )
 }
