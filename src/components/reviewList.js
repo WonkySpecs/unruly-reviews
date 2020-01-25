@@ -7,14 +7,14 @@ export default ({gamePages}) => {
     return (
         <nav className={styles.reviewsListWrapper}>
             {gamePages.map(gamePage => (
-                <div className={styles.gameTileWrapper}>
+                <div key={gamePage.title} className={styles.gameTileWrapper}>
                     <Link to={gamePage.fields.slug} className={styles.gameTile}>
                         <h3 className={styles.gameName}>
                             {gamePage.title}
                         </h3>
                         <div className={styles.tagsWrapper}>
                             {gamePage.tags.map(tag => (
-                                <GameTag tagData={tag} />
+                                <GameTag key={tag.id} tagData={tag} />
                                 ))}
                         </div>
 

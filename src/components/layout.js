@@ -26,10 +26,10 @@ export default ({title, children}) => {
                 <h1 className={styles.headerTitle}>{data.site.siteMetadata.title}</h1>
                 <nav className={styles.headerLinks}>
                     <ul>
-                        <HeaderLink to="/">Home</HeaderLink>
-                        <HeaderLink to="/about">About</HeaderLink>
-                        <HeaderLink to="/reviews">The Reviews</HeaderLink>
-                        <HeaderLink to="/others">Others</HeaderLink>
+                        <HeaderLink key="home" to="/">Home</HeaderLink>
+                        <HeaderLink key="about" to="/about">About</HeaderLink>
+                        <HeaderLink key="reviews" to="/reviews">The Reviews</HeaderLink>
+                        <HeaderLink key="others" to="/others">Others</HeaderLink>
                     </ul>
                 </nav>
                 <div className={styles.headerUnderline}/>

@@ -14,14 +14,16 @@ function classForTagType(tagType) {
     }
 }
 
-export default ({tagData}) => {
+export default ({tagData, tooltipDisabled, onClick}) => {
     const { displayName, type, tooltip } = tagData;
     return (
-        <div className={classForTagType(type)}>
+        <div className={classForTagType(type)} onClick={onClick}>
             {displayName}
-            <div className={styles.tooltip}>
-                {type}: {tooltip}
-            </div>
+            {tooltipDisabled ? null : (
+                <div className={styles.tooltip}>
+                    {type}: {tooltip}
+                </div>
+            )}
         </div>
     )
 }

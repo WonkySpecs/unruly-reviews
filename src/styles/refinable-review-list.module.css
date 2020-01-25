@@ -1,0 +1,38 @@
+.controlsWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.inputWrapper * {
+    margin: 0 0.1rem;
+}
+
+.inputWrapper button {
+    padding: 0;
+}
+
+.sortInput {
+    order: 99;
+    margin-left: auto;
+}
+
+.sortInput button {
+    font-weight: bolder;
+}
+
+.filterTagsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.filterTagsWrapper * {
+    margin: 0 0.1rem;
+    cursor: pointer;
+}

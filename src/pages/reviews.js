@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import ReviewList from "../components/reviewList"
+import RefinableReviewList from "../components/refinableReviewList"
 
 export default ({data}) => (
     <Layout title="Reviews">
         <h2>The reviews</h2>
-        <ReviewList gamePages={data.allSummariesJson.edges.map(edge => edge.node)} />
+        <RefinableReviewList gamePages={data.allSummariesJson.edges.map(edge => edge.node)} />
     </Layout>
 )
 
@@ -22,6 +22,7 @@ export const query = graphql`
           tagline
           added
           tags {
+            id
             displayName
             type
             tooltip

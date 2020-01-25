@@ -1,5 +1,10 @@
 html {
     background-color: #E6E6FA;
+    /*  Fixes the center div moving (because of auto h margin) when the scrollbar shows in firefox (webkit), as this changes the "width" of the screen. */
+    width: 100vw;
+    /* Above fix causes the h scroll to show whenever the v scroll shows.
+       As all pages are made to fit in a single page width, we can hide it */
+    overflow-x: hidden;
 }
 
 p {
