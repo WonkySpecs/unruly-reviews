@@ -30,6 +30,20 @@
         "type": "genre",
         "tooltip": "Includes a system of resources to manipulate and take advantage of."
     },
+    {
+        "id": "genre-set-collecting",
+        "displayName": "Set collection",
+        "type": "genre",
+        "tooltip": "Gather resources in matching sets."
+    },
+    {
+        "id": "genre-coop",
+        "displayName": "Cooperative",
+        "type": "genre",
+        "tooltip": "Work together with the other players to achieve a common goal."
+    },
+
+
 
     {
         "id": "theme-nature",
