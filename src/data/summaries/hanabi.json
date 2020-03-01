@@ -1,0 +1,18 @@
+{
+    "title": "Hanabi",
+    "tagline": "Cooperative solitaire where the only cards you can't see are the ones you can play.",
+    "good": [
+        "An interesting puzzle which requires a combination of logic, luck, and metagaming to overcome.",
+        "Properly cooperative gameplay. Every player is important, and free to make their own decisions without input from others.",
+        "Tense moments of acting on hunches and incomplete information, and sharing the celebration/commiserations of those moments with others."
+    ],
+    "bad": [
+        "The outcome of the game being heavily influenced by chance isn't your cup of tea.",
+        "A largely silent game wouldn't suit your group.",
+        "An important memory-reliant subgame sounds too annoying."
+    ],
+    "note": [
+    ],
+    "tags": ["genre-set-collecting", "genre-coop"],
+    "added": "2020-03-01"
+}
